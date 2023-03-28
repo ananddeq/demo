@@ -1,0 +1,6 @@
+we will simply configure it to use a directory on the host. In this case, I specify a path
+, forward /data, on the host. This way, any files created in the volume would be stored 
+in the directory data on my node. Once the volume is created, to access it from a container
+ we mount the volume to a directory inside the container. We use the volume mounts field in 
+ each container to mount the data volume to the directory, /opt within the container. T
+he random number will now be written to /opt mount inside the container, which happens to be on t
